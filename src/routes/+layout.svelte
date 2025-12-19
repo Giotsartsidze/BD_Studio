@@ -8,4 +8,4 @@
 <!--	<link rel="icon" href={favicon} />-->
 </svelte:head>
 
-{@render children()}git add
+{@render children()}
