@@ -28,7 +28,7 @@
 
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">50+</span>
+                        <span class="stat-number">500+</span>
                         <span class="stat-label">დასრულებული პროექტი</span>
                     </div>
                     <div class="stat">
