@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-gold: #c9a961;
-    --primary-dark: #1a1a1a;
-    --secondary-dark: #2d2d2d;
-    --text-dark: #333333;
+    /* BD Studio brand palette (espresso · bronze · cream) */
+    --primary-gold: #b08a55;   /* warm bronze accent */
+    --accent-tan: #c2a079;     /* tan band */
+    --primary-dark: #2e2014;   /* deep espresso (logo brown) */
+    --secondary-dark: #4a3318; /* mid espresso */
+    --text-dark: #2e2620;
     --text-light: #ffffff;
-    --text-gray: #666666;
-    --bg-light: #f8f8f8;
-    --bg-white: #ffffff;
+    --text-gray: #6b5d4f;      /* warm gray */
+    --bg-light: #f7f1e8;       /* cream */
+    --bg-white: #fffdf9;       /* warm white */
     --accent-blue: #4a90e2;
-    --border-color: #e0e0e0;
+    --border-color: #e7ddcd;
 }
 
 html, body {

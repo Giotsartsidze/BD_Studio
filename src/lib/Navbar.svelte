@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Logo from '$lib/Logo.svelte';
+
     let isMenuOpen = $state(false);
     let isScrolled = $state(false);
 
@@ -21,9 +23,8 @@
 
 <header class="navbar" class:scrolled={isScrolled}>
     <div class="container">
-        <a href="#top" class="logo">
-                <img src="/images/logo.jpg" alt="Babu & Dilara Logo" width="120" height="auto" />
-            <span>BD Studio</span>
+        <a href="#top" class="logo" aria-label="BD Studio">
+            <Logo class="logo-mark" />
         </a>
 
         <nav class="nav-links desktop">
@@ -77,30 +78,21 @@
     }
 
     .logo {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 12px;
         text-decoration: none;
         color: var(--text-light);
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.5em; /* გაზარდეთ თუ გსურთ უფრო დიდი ტექსტი */
-        font-weight: 700;
-        transition: all 0.3s ease;
+        transition: color 0.3s ease;
     }
 
-    .logo img {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-        border-radius: 20px;
+    .logo :global(.logo-mark) {
+        height: 38px;
+        width: auto;
+        display: block;
     }
 
     .navbar.scrolled .logo {
         color: var(--primary-dark);
-    }
-
-    .logo svg {
-        color: var(--primary-gold);
     }
 
     .nav-links.desktop {
@@ -148,9 +140,9 @@
     }
 
     .nav-cta:hover {
-        background: #b89449;
+        background: #96764a;
         transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(201, 169, 97, 0.3);
+        box-shadow: 0 8px 20px rgba(176, 138, 85, 0.35);
     }
 
     .menu-button {

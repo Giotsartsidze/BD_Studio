@@ -9,8 +9,16 @@
 
 <div class="hero">
     <div class="hero-bg">
+        <video
+            class="hero-video"
+            src="/video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+        ></video>
         <div class="hero-overlay"></div>
-        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920&q=80" alt="Luxury Kitchen" class="hero-image" />
     </div>
 
     <div class="hero-content">
@@ -73,16 +81,11 @@
         z-index: 1;
     }
 
-    .hero-image {
+    .hero-video {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        animation: zoomIn 20s ease-out infinite alternate;
-    }
-
-    @keyframes zoomIn {
-        from { transform: scale(1); }
-        to { transform: scale(1.1); }
+        display: block;
     }
 
     .hero-overlay {
@@ -91,7 +94,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.4) 100%);
+        background: linear-gradient(135deg, rgba(46, 32, 20, 0.85) 0%, rgba(46, 32, 20, 0.45) 60%, rgba(74, 51, 24, 0.55) 100%);
         z-index: 2;
     }
 
@@ -122,8 +125,8 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: rgba(201, 169, 97, 0.2);
-        border: 1px solid rgba(201, 169, 97, 0.4);
+        background: rgba(176, 138, 85, 0.22);
+        border: 1px solid rgba(176, 138, 85, 0.45);
         color: var(--primary-gold);
         padding: 8px 20px;
         border-radius: 50px;
@@ -205,9 +208,9 @@
     }
 
     .btn-primary:hover {
-        background: #b89449;
+        background: #96764a;
         transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(201, 169, 97, 0.4);
+        box-shadow: 0 10px 30px rgba(176, 138, 85, 0.45);
     }
 
     .btn-secondary {
@@ -219,7 +222,7 @@
 
     .btn-secondary:hover {
         border-color: var(--primary-gold);
-        background: rgba(201, 169, 97, 0.1);
+        background: rgba(176, 138, 85, 0.12);
     }
 
     .scroll-indicator {

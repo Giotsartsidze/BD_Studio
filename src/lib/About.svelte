@@ -92,7 +92,7 @@
 
     .section-badge {
         display: inline-block;
-        background: rgba(201, 169, 97, 0.1);
+        background: rgba(176, 138, 85, 0.12);
         color: var(--primary-gold);
         padding: 8px 24px;
         border-radius: 50px;

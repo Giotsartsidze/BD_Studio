@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Logo from '$lib/Logo.svelte';
+
     const { year = new Date().getFullYear() } = $props();
 
     const footerLinks = [
@@ -33,13 +35,17 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="#top" class="footer-logo">
-                        <img src="/images/logo.jpg" alt="Babu & Dilara Logo" width="120" height="auto" />
-                        <span>BD Studio</span>
+                <a href="#top" class="footer-logo" aria-label="BD Studio">
+                        <Logo class="footer-logo-mark" />
                 </a>
                 <p class="footer-desc">
                     ექსკლუზიური სამზარეულოები, რომლებიც ქმნის სივრცეს თქვენი ოცნებებისა და საჭიროებების შესაბამისად.
                 </p>
+                <div class="footer-contact">
+                    <a href="tel:+995551870808">+995 551 870 808</a>
+                    <a href="tel:+995577208084">+995 577 208 084</a>
+                    <a href="mailto:bdstudio.ge@gmail.com">bdstudio.ge@gmail.com</a>
+                </div>
 <!--                <div class="social-links">-->
 <!--                    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">-->
 <!--                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">-->
@@ -104,18 +110,34 @@
     }
 
     .footer-logo {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        gap: 12px;
         text-decoration: none;
-        color: var(--text-light);
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 1.5em;
-        font-weight: 700;
-        margin-bottom: 20px;
+        color: var(--bg-white);
+        margin-bottom: 24px;
     }
 
-    .footer-logo svg {
+    .footer-logo :global(.footer-logo-mark) {
+        height: 44px;
+        width: auto;
+        display: block;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .footer-contact a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        font-size: 0.95em;
+        transition: color 0.3s ease;
+    }
+
+    .footer-contact a:hover {
         color: var(--primary-gold);
     }
 

@@ -41,7 +41,8 @@
                             </div>
                             <div class="info-text">
                                 <span class="info-label">ტელეფონი</span>
-                                <span class="info-value">+995 551 870 808 </span>
+                                <a href="tel:+995551870808" class="info-value">+995 551 870 808</a>
+                                <a href="tel:+995577208084" class="info-value">+995 577 208 084</a>
                             </div>
                         </div>
 
@@ -53,7 +54,7 @@
                             </div>
                             <div class="info-text">
                                 <span class="info-label">ელ. ფოსტა</span>
-                                <span class="info-value">bd.furniturestudio@gmail.com</span>
+                                <a href="mailto:bdstudio.ge@gmail.com" class="info-value">bdstudio.ge@gmail.com</a>
                             </div>
                         </div>
 
@@ -117,7 +118,7 @@
 
     .section-badge {
         display: inline-block;
-        background: rgba(201, 169, 97, 0.1);
+        background: rgba(176, 138, 85, 0.12);
         color: var(--primary-gold);
         padding: 8px 24px;
         border-radius: 50px;
@@ -206,6 +207,16 @@
         font-size: 1.1em;
         color: var(--primary-dark);
         font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a.info-value {
+        display: block;
+    }
+
+    a.info-value:hover {
+        color: var(--primary-gold);
     }
 
     .social-links {
